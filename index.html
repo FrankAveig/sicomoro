@@ -103,14 +103,12 @@
             <!-- Navegación izquierda con logo -->
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item">
-                        <a href="#about" class="header__nav-link">SOBRE NOSOTROS</a>
-                    </li>
+              
                     <li class="header__nav-item">
                         <a href="#services" class="header__nav-link">SERVICIOS</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#visit" class="header__nav-link">VISITAR</a>
+                        <a href="#contact" class="header__nav-link">VISITAR</a>
                     </li>
                 </ul>
                 <!-- Logo junto al menú -->
@@ -122,10 +120,10 @@
             <!-- Contacto derecha -->
             <div class="header__contact">
                 <div class="header__contact-info">
-                    <p class="header__contact-address">Guayaquil, Pradera 1 Mz E4 Villa 2</p>
+                    <p class="header__contact-address">Ceibos Avenida El Bombero Condominio Dora Isabel Local 404</p>
                     <p class="header__contact-phone">097 890 7012</p>
                 </div>
-                <button class="header__button">Reservar Ahora</button>
+                <button class="header__button" data-whatsapp-section="Servicios Generales">Reservar Ahora</button>
             </div>
         </div>
     </header>
@@ -139,9 +137,10 @@
                 <ul class="hero__services">
                     <li class="hero__service-item">MASAJES</li>
                     <li class="hero__service-item">FACIALES</li>
-                    <li class="hero__service-item">ENVOLTURAS Y EXFOLIACIONES</li>
+                    <li class="hero__service-item">PESTAÑAS Y CEJAS</li>
+                    <li class="hero__service-item">DEPILACIÓN CORPORAL</li>
                 </ul>
-                <button class="hero__button">Explorar Servicios</button>
+                <button class="hero__button" data-whatsapp-section="Servicios Generales">Explorar Servicios</button>
             </div>
 
             <!-- Imagen derecha -->
@@ -172,34 +171,59 @@
                     <div class="services__list">
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">SUECO DIRIGIDO</h4>
-                                <span class="services__item-price">$30</span>
+                                <h4 class="services__item-name">MASAJE RELAJANTE DE ESPALDA</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$35</span>
+                                    <span class="services__price-promo">
+                                        $27
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
                             <p class="services__item-description">Libera la tensión en espalda, cuello y hombros</p>
                         </div>
 
+
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">TEJIDO PROFUNDO DIRIGIDO</h4>
-                                <span class="services__item-price">$75</span>
+                                <h4 class="services__item-name">DRENAJE LOCALIZADO</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$23</span>
+                                    <span class="services__price-promo">
+                                        $15
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
-                            <p class="services__item-description">Enfoque en un área específica donde tienes tensión</p>
+                            <p class="services__item-description">Drenaje localizado para reducir la hinchazón y mejorar la circulación</p>
                         </div>
 
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">PIEDRAS CALIENTES DIRIGIDAS</h4>
-                                <span class="services__item-price">$75</span>
+                                <h4 class="services__item-name">MADEROTERAPIA LOCALIZADA</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$23</span>
+                                    <span class="services__price-promo">
+                                        $15
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
-                            <p class="services__item-description">Terapia con piedras calientes enfocada en un área específica</p>
+                            <p class="services__item-description">Terapia con maderoterapia para reducir la hinchazón y mejorar la circulación</p>
                         </div>
 
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">RITUAL REVITALIZANTE DE PIES</h4>
-                                <span class="services__item-price">$60</span>
+                                <h4 class="services__item-name">MASAJE REDUCTOR</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$23</span>
+                                    <span class="services__price-promo">
+                                        $15
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
-                            <p class="services__item-description">Incluye compresas de toalla al vapor, exfoliación y masaje</p>
+                            <p class="services__item-description">Masaje reductor para tonificar y mejorar la circulación</p>
                         </div>
                     </div>
                 </div>
@@ -210,34 +234,53 @@
                     <div class="services__list">
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">MASAJE SUECO</h4>
-                                <span class="services__item-price">$85</span>
-                            </div>
-                            <p class="services__item-description">Técnica clásica de presión media</p>
-                        </div>
-
-                        <div class="services__item">
-                            <div class="services__item-header">
-                                <h4 class="services__item-name">MASAJE DE TEJIDO PROFUNDO</h4>
-                                <span class="services__item-price">$100</span>
-                            </div>
-                            <p class="services__item-description">Presión lenta y profunda para músculos estresados</p>
-                        </div>
-
-                        <div class="services__item">
-                            <div class="services__item-header">
                                 <h4 class="services__item-name">MASAJE CON PIEDRAS CALIENTES</h4>
-                                <span class="services__item-price">$110</span>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$49</span>
+                                    <span class="services__price-promo">
+                                        $39
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
-                            <p class="services__item-description">Masaje sueco mejorado con terapia de piedras calientes</p>
+                            <p class="services__item-description">Masaje con piedras calientes para relajación profunda</p>
                         </div>
 
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">MASAJE PRENATAL</h4>
-                                <span class="services__item-price">$85</span>
+                                <h4 class="services__item-name">MASAJE DESCONTRACTANTE</h4>
+                                <span class="services__item-price">$55</span>
                             </div>
-                            <p class="services__item-description">Incluye compresas de toalla al vapor, exfoliación y masaje</p>
+                            <p class="services__item-description">Masaje descontractante para relajación profunda</p>
+                        </div>
+
+                        <div class="services__item">
+                            <div class="services__item-header">
+                                <h4 class="services__item-name">PEELING CORPORAL CON SALES MINERALES</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$49</span>
+                                    <span class="services__price-promo">
+                                        $39
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
+
+                            </div>
+                            <p class="services__item-description">Peeling corporal para exfoliar la piel y mejorar la circulación y unificar el tono</p>
+                        </div>
+
+                        <div class="services__item">
+                            <div class="services__item-header">
+                                <h4 class="services__item-name">MASAJE RELAJANTE AROMATERAPEUTICO   </h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$45</span>
+                                    <span class="services__price-promo">
+                                        $35
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <p class="services__item-description">Masaje relajante aromaterapéutico para relajación profunda</p>
                         </div>
                     </div>
                 </div>
@@ -245,8 +288,7 @@
 
             <!-- Action Buttons -->
             <div class="services__actions">
-                <button class="services__button services__button--primary">Reservar Ahora</button>
-                <button class="services__button services__button--secondary">Ver Todos los Servicios</button>
+                <button class="services__button services__button--primary" data-whatsapp-section="MASAJES">Reservar Ahora</button>
             </div>
         </div>
     </section>
@@ -267,36 +309,89 @@
                 <div class="services__column">
                     <h3 class="services__column-title">tratamientos básicos</h3>
                     <div class="services__list">
+
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">FACIAL HIDRATANTE</h4>
-                                <span class="services__item-price">$65</span>
+                                <h4 class="services__item-name">FACIAL PROFUNDA (PIEL NOMRAL O SECA)</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$47</span>
+                                    <span class="services__price-promo">
+                                        $39
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
-                            <p class="services__item-description">Hidratación profunda con productos europeos de alta calidad</p>
+                            <p class="services__item-description">Elimina celulas muertas, suaviza asperezas y activa la circulación para un aspecto más vital y saludable</p>
+                        </div>
+                        
+                        <div class="services__item services__item--promo">
+                            <div class="services__item-header">
+                                <h4 class="services__item-name">lIMPLIEZA FACIAL PROFUNDA (PIEL MIXTA A GRASA)</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$57</span>
+                                    <span class="services__price-promo">
+                                        $49
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <p class="services__item-description">Elimina impurezas, comedones, puntos negros, aumenta la oxigenación y facilita la absorción de productos</p>
                         </div>
 
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">FACIAL ANTIEDAD</h4>
-                                <span class="services__item-price">$90</span>
+                                <h4 class="services__item-name">FACIAL SICOMORO</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$69</span>
+                                    <span class="services__price-promo">
+                                        $55
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
-                            <p class="services__item-description">Tratamiento rejuvenecedor con tecnología avanzada</p>
+                            <p class="services__item-description">Limpia profundamente, hidrata y restura el equilibrio natural de tu rostro<br><br></p>
+                        </div>
+
+
+                        <div class="services__item">
+                            <div class="services__item-header">
+                                <h4 class="services__item-name">FACIAL PARA ADOLESCENTES</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$35</span>
+                                    <span class="services__price-promo">
+                                        $25
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <p class="services__item-description">Limpia la piel sin agredirla con productos especiales para la edad.<br><br></p>
                         </div>
 
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">FACIAL PURIFICANTE</h4>
-                                <span class="services__item-price">$75</span>
+                                <h4 class="services__item-name">HIDRATACIÓN FACIAL</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$45</span>
+                                    <span class="services__price-promo">
+                                        $35
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
-                            <p class="services__item-description">Limpieza profunda para pieles con impurezas</p>
+                            <p class="services__item-description">Tratamiento de mantenimiento con acido hialurónico, aparatología avanzada y mascara de colágeno.</p>
                         </div>
-
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">FACIAL ILUMINADOR</h4>
-                                <span class="services__item-price">$80</span>
+                                <h4 class="services__item-name">MASAJE FACIAL</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$45</span>
+                                        <span class="services__price-promo">
+                                        $35
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
-                            <p class="services__item-description">Brillo y luminosidad instantánea para tu piel</p>
+                            <p class="services__item-description">Ritual de bienestar y belleza que relaja y revitaliza tu rostro según tus necesidad elije: Drenaje facial, masej antiage o gimnasia facial.</p>
                         </div>
                     </div>
                 </div>
@@ -305,36 +400,78 @@
                 <div class="services__column">
                     <h3 class="services__column-title">tratamientos avanzados</h3>
                     <div class="services__list">
+
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">FACIAL CON MICRODERMOABRASIÓN</h4>
-                                <span class="services__item-price">$120</span>
+                                <h4 class="services__item-name">FACIAL ANTIEDAD GOLD</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$120</span>
+                                    <span class="services__price-promo">
+                                        $85
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
-                            <p class="services__item-description">Exfoliación profunda con tecnología de punta</p>
+                            <p class="services__item-description">Tratamiento rejuvenecedor con tecnología avanzada, deja la piel más firme, tersa aportando vitalidad y luminosidad al rostro. Incluye masaje sensorial para una experiencia relajante completa.</p>
                         </div>
 
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">FACIAL CON LUZ LED</h4>
-                                <span class="services__item-price">$110</span>
+                                <h4 class="services__item-name">FACIAL PURIFICANTE REGULADOR</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$85</span>
+                                    <span class="services__price-promo">
+                                        $75
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
-                            <p class="services__item-description">Terapia de luz para estimular la regeneración celular</p>
+                            <p class="services__item-description">Limpieza profunda para pieles con tendencia al acné, desinflama, reduce rojeces y previene la apareción de nuevos brotes. incluye hidratación regeneradora y ampolla secativa purificante.</p>
+                        </div>
+
+
+                        <div class="services__item">
+                            <div class="services__item-header">
+                                <h4 class="services__item-name">FACIAL PARA EMBARAZADAS</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$75</span>
+                                    <span class="services__price-promo">
+                                        $55
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <p class="services__item-description">Un tratamiento suave y seguro, formulado sin químico, ni activos agresivos. Ideal para cuidar la piel durante el embarazo.</p>
                         </div>
 
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">FACIAL CON DIAMANTE</h4>
-                                <span class="services__item-price">$130</span>
+                                <h4 class="services__item-name">FACIAL CALMANTE PARA PIELES SENSIBLES</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$120</span>
+                                    <span class="services__price-promo">
+                                        $85
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
-                            <p class="services__item-description">Tratamiento de lujo con exfoliación con punta de diamante</p>
+                            <p class="services__item-description">
+                                formulado para pieles con dermatitis, rosacea o sensibilidad extrema, este facial utiliza productos libres de alcohol, fragancias y productos irritantes. Refuerza la barrera cutánea.
+                            </p>
                         </div>
 
                         <div class="services__item">
                             <div class="services__item-header">
-                                <h4 class="services__item-name">FACIAL PREMIUM COMPLETO</h4>
-                                <span class="services__item-price">$150</span>
+                                <h4 class="services__item-name">HIDRATACIÓN FACIAL PREMIUM</h4>
+                                <span class="services__item-price">
+                                    <span class="services__price-original">$65</span>
+                                    <span class="services__price-promo">
+                                        $55
+                                        <span class="services__promo-badge">PROMO BLACK</span>
+                                    </span>
+                                </span>
                             </div>
-                            <p class="services__item-description">Experiencia completa con múltiples técnicas y productos premium</p>
+                            <p class="services__item-description">Tratamiento de mantenimiento con acido hialurónico, aparatología avanzada y mascara de colágeno.</p>
                         </div>
                     </div>
                 </div>
@@ -342,8 +479,7 @@
 
             <!-- Action Buttons -->
             <div class="services__actions">
-                <button class="services__button services__button--primary">Reservar Ahora</button>
-                <button class="services__button services__button--secondary">Ver Todos los Servicios</button>
+                <button class="services__button services__button--primary" data-whatsapp-section="FACIALES">Reservar Ahora</button>
             </div>
         </div>
     </section>
@@ -362,8 +498,8 @@
 
             <!-- Content Right -->
             <div class="promo__content">
-                <h2 class="promo__main-title">Revitaliza tu piel.</h2>
-                <h3 class="promo__subtitle">ENVOLTURAS Y EXFOLIACIONES</h3>
+                <h2 class="promo__main-title">Realza tu mirada.</h2>
+                <h3 class="promo__subtitle">PESTAÑAS Y CEJAS</h3>
 
                 <!-- Services Grid -->
                 <div class="promo__services">
@@ -373,18 +509,30 @@
                         <div class="promo__list">
                             <div class="promo__item">
                                 <div class="promo__item-header">
-                                    <h5 class="promo__item-name">EXFOLIACIÓN AZÚCAR MARRÓN</h5>
-                                    <span class="promo__item-price">$75</span>
+                                    <h5 class="promo__item-name">CEJAS PERFECTAS</h5>
+                                    <span class="promo__item-price">
+                                        <span class="promo__price-original">$7</span>
+                                        <span class="promo__price-promo">
+                                            $5
+                                            <span class="promo__promo-badge">PROMO BLACK</span>
+                                        </span>
+                                    </span>
                                 </div>
-                                <p class="promo__item-description">Exfoliación corporal completa y tratamiento hidratante</p>
+                                <p class="promo__item-description">Diseño y depilación de cejas con hilo para una depilación segura y duradera. Ideal para aquellas personas que desean tener cejas perfectas y definidas.</p>
                             </div>
 
                             <div class="promo__item">
                                 <div class="promo__item-header">
-                                    <h5 class="promo__item-name">EXFOLIACIÓN SAL MENTA</h5>
-                                    <span class="promo__item-price">$80</span>
+                                    <h5 class="promo__item-name">HENNA DE <br>CEJAS</h5>
+                                    <span class="promo__item-price">
+                                        <span class="promo__price-original">$10</span>
+                                        <span class="promo__price-promo">
+                                            $7
+                                            <span class="promo__promo-badge">PROMO BLACK</span>
+                                        </span>
+                                    </span>
                                 </div>
-                                <p class="promo__item-description">Revitaliza la piel con exfoliación corporal completa e hidratación de menta</p>
+                                <p class="promo__item-description">Henna de cejas para darle color y brillo a tus cejas naturales.<br><br></p>
                             </div>
                         </div>
                     </div>
@@ -395,18 +543,29 @@
                         <div class="promo__list">
                             <div class="promo__item">
                                 <div class="promo__item-header">
-                                    <h5 class="promo__item-name">ENVOLTURA BARRO LECHE Y MIEL</h5>
-                                    <span class="promo__item-price">$75</span>
+                                    <h5 class="promo__item-name">LIFTING DE PESTAÑAS</h5>
+                                    <span class="promo__item-price">
+                                        <span class="promo__price-original">$27</span>
+                                        <span class="promo__price-promo">
+                                            $19
+                                            <span class="promo__promo-badge">PROMO BLACK</span>
+                                        </span>
+                                    </span>
                                 </div>
-                                <p class="promo__item-description">Exfoliación seguida de envoltura hidratante con barro</p>
+                                <p class="promo__item-description">Lifting de pestañas para darle volumen y definición a tus pestañas naturales.<br><br><br></p>
                             </div>
 
                             <div class="promo__item">
                                 <div class="promo__item-header">
-                                    <h5 class="promo__item-name">ENVOLTURA BARRO BÁLTICO</h5>
-                                    <span class="promo__item-price">$115</span>
+                                    <h5 class="promo__item-name">GROW LAMINATION</h5>
+                                    <span class="promo__item-price">$27</span>
+                                        <span class="promo__price-promo">
+                                            $19
+                                            <span class="promo__promo-badge">PROMO BLACK</span>
+                                        </span>
+                                    </span>
                                 </div>
-                                <p class="promo__item-description">Desintoxicante e hidratante con limos orgánicos que mejoran la piel</p>
+                                <p class="promo__item-description">Grow laminación para darle volumen y definición a tus pestañas naturales.</p>
                             </div>
                         </div>
                     </div>
@@ -414,12 +573,219 @@
 
                 <!-- Action Buttons -->
                 <div class="promo__actions">
-                    <button class="promo__button promo__button--primary">Reservar Ahora</button>
-                    <button class="promo__button promo__button--secondary">Ver Todos los Servicios</button>
+                    <button class="promo__button promo__button--primary" data-whatsapp-section="PESTAÑAS Y CEJAS">Reservar Ahora</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Depilación Corporal Section -->
+    <section class="promo promo--reverse" id="depilacion">
+        <div class="promo__container">
+            <!-- Image Left -->
+            <div class="promo__image-wrapper">
+                <div class="promo__image-container">
+                    <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1000&auto=format&fit=crop" alt="Depilación corporal" class="promo__image">
+                </div>
+                <div class="promo__accent-circle promo__accent-circle--top"></div>
+                <div class="promo__accent-circle promo__accent-circle--bottom"></div>
+            </div>
+
+            <!-- Content Right -->
+            <div class="promo__content">
+                <h2 class="promo__main-title">Depilación profesional.</h2>
+                <h3 class="promo__subtitle">DEPILACIÓN CORPORAL</h3>
+
+                <!-- Services Grid -->
+                <div class="promo__services">
+                    <!-- 30 Minute Sessions -->
+                    <div class="promo__column">
+                        <h4 class="promo__column-title">áreas pequeñas</h4>
+                        <div class="promo__list">
+                            <div class="promo__item">
+                                <div class="promo__item-header">
+                                    <h5 class="promo__item-name">AXILAS</h5>
+                                    <span class="promo__item-price">
+                                        <span class="promo__price-original">$12</span>
+                                        <span class="promo__price-promo">
+                                            $9
+                                            <span class="promo__promo-badge">PROMO BLACK</span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <p class="promo__item-description">Depilación de axilas con cera o hilo para una depilación suave y duradera.</p>
+                            </div>
+
+                            <div class="promo__item">
+                                <div class="promo__item-header">
+                                    <h5 class="promo__item-name">MEDIA PIERNA</h5>
+                                    <span class="promo__item-price">
+                                        <span class="promo__price-original">$15</span>
+                                        <span class="promo__price-promo">
+                                            $10
+                                            <span class="promo__promo-badge">PROMO BLACK</span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <p class="promo__item-description">Depilación de media pierna con cera para una depilación precisa y duradera.</p>
+                            </div>
+
+                            <div class="promo__item">
+                                <div class="promo__item-header">
+                                    <h5 class="promo__item-name">DEPILACIÓN DE LINEA ALBA</h5>
+                                    <span class="promo__item-price">
+                                        <span class="promo__price-original">$12</span>
+                                        <span class="promo__price-promo">
+                                            $9
+                                            <span class="promo__promo-badge">PROMO BLACK</span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <p class="promo__item-description">Depilación completa de brazos con cera para una piel suave y lisa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 60 Minute Sessions -->
+                    <div class="promo__column">
+                        <h4 class="promo__column-title">áreas grandes</h4>
+                        <div class="promo__list">
+                           
+
+                            <div class="promo__item">
+                                <div class="promo__item-header">
+                                    <h5 class="promo__item-name">DEPILACIÓN DE BRAZOS</h5>
+                                    <span class="promo__item-price">
+                                        <span class="promo__price-original">$15</span>
+                                        <span class="promo__price-promo">
+                                            $10
+                                            <span class="promo__promo-badge">PROMO BLACK</span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <p class="promo__item-description">Depilación de brazos con cera para una depilación precisa y duradera.</p>
+                            </div>
+                            <div class="promo__item">
+                                <div class="promo__item-header">
+                                    <h5 class="promo__item-name">PIERNAS COMPLETAS</h5>
+                                    <span class="promo__item-price">
+                                        <span class="promo__price-original">$27</span>
+                                        <span class="promo__price-promo">
+                                            $20
+                                            <span class="promo__promo-badge">PROMO BLACK</span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <p class="promo__item-description">Depilación completa de piernas con cera para una piel suave y sedosa.</p>
+                            </div>
+                            <div class="promo__item">
+                                <div class="promo__item-header">
+                                    <h5 class="promo__item-name">DEPILACIÓN DE ESPALDA</h5>
+                                    <span class="promo__item-price">
+                                        <span class="promo__price-original">$27</span>
+                                        <span class="promo__price-promo">
+                                            $20
+                                            <span class="promo__promo-badge">PROMO BLACK</span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <p class="promo__item-description">Depilación de espalda con cera para una depilación precisa y duradera.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="promo__actions">
+                    <button class="promo__button promo__button--primary" data-whatsapp-section="DEPILACIÓN CORPORAL">Reservar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta" id="cta">
+        <div class="cta__container">
+            <!-- Content Left -->
+            <div class="cta__content">
+                <h2 class="cta__title">La buena salud es un compromiso contigo mismo.</h2>
+                <p class="cta__description">Nuestro compromiso contigo es que usaremos nuestras habilidades y experiencia para ayudarte a conectar con tu increíble ser, descubrir tu verdadero yo y ser más confiado y saludable.</p>
+                <button class="cta__button" data-whatsapp-section="Servicios Generales">Reservar Servicios</button>
+            </div>
+
+            <!-- Image Right -->
+            <div class="cta__image-wrapper">
+                <div class="cta__organic-shape"></div>
+                <div class="cta__foliage-background"></div>
+                <div class="cta__purple-frame">
+                    <div class="cta__image-container">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1000&auto=format&fit=crop" alt="Bienestar y salud" class="cta__image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <!-- Top section with organic curve -->
+        <div class="footer__top">
+            <div class="footer__curve"></div>
+        </div>
+
+        <!-- Main footer content -->
+        <div class="footer__main">
+            <div class="footer__container">
+                <!-- Left: Contact Info & Branding -->
+                <div class="footer__left">
+                    <h2 class="footer__title">Contáctanos</h2>
+                    <div class="footer__social">
+                        <a href="mailto:info@sicomorospa.com" class="footer__social-link">
+                            <svg class="footer__social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>EMAIL</span>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                            <svg class="footer__social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <span>INSTAGRAM</span>
+                        </a>
+                    </div>
+                    <p class="footer__copyright">Sicomoro Spa © <span id="copyright-year"></span></p>
+                </div>
+
+                <!-- Middle: Contact Details -->
+                <div class="footer__middle">
+                    <div class="footer__contact-item">
+                        <h3 class="footer__contact-label">UBICACIÓN</h3>
+                        <p class="footer__contact-value">Guayaquil, Ceibos Avenida El Bombero Condominio Dora Isabel Local 404</p>
+                    </div>
+                    <div class="footer__contact-item">
+                        <h3 class="footer__contact-label">TELÉFONO</h3>
+                        <p class="footer__contact-value">097 890 7012</p>
+                    </div>
+                    <div class="footer__contact-item">
+                        <h3 class="footer__contact-label">HORARIOS</h3>
+                        <p class="footer__contact-value">Lunes - Viernes 10am - 7pm</p>
+                        <p class="footer__contact-value">Sábado 8am - 4pm</p>
+                    </div>
+                </div>
+
+                <!-- Right: Additional Info -->
+                <div class="footer__right">
+                    <p class="footer__message">Estamos aquí para ayudarte en tu viaje hacia el bienestar. Visítanos y descubre la experiencia Sicomoro Spa.</p>
+                    <div class="footer__cta">
+                        <a href="#services" class="footer__cta-link">Explorar Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <!-- JavaScript -->
     <script src="/javascript/main.js"></script>
